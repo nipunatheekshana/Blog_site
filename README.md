@@ -127,7 +127,7 @@ src/
 
 ```bash
 
-git clone <repository-url>
+git clone https://github.com/nipunatheekshana/Blog_site.git
 
 cd laravel-react-blog
 
