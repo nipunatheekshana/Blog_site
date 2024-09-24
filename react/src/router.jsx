@@ -6,7 +6,7 @@ import NotFound from './views/NotFound';
 import DefaultLayout from './layouts/DefaultLayout';
 import GuestLayout from './layouts/GuestLayout';
 import UserBlogs from './views/UserBlogs';
-import CreateBlog from './views/CreateBlog';
+import BlogForm from './views/BlogForm';
 
 const router = createBrowserRouter([
     //loged users
@@ -18,14 +18,20 @@ const router = createBrowserRouter([
                 path: '/',
                 element: <Navigate to="/user_blogs" />,
             },
+            ,
             {
                 path: '/user_blogs',
                 element: <UserBlogs />,
             },
             {
-                path: '/create_blog',
-                element: <CreateBlog />,
+                path: '/blogs/new',
+                element: <BlogForm key="blogCreate" />,
             },
+            {
+                path: '/blogs/:id',
+                element: <BlogForm key="blogUpdate" />,
+            }
+
         ],
     },
 

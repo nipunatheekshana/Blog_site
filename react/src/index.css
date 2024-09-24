@@ -35,7 +35,21 @@ input {
 input:focus {
     border-color: #5b08a7;
 }
+textarea {
+    outline: 0;
+    background: #ffffff;
+    width: 100%;
+    border: 2px solid #e6e6e6;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: all 0.3s;
+}
 
+textarea:focus {
+    border-color: #5b08a7;
+}
 .btn,
 .btn-add,
 .btn-edit,
@@ -230,6 +244,12 @@ table > tbody > tr > td {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
 }
+.loading-message {
+    text-align: center;
+    font-weight: bold; /* Optional: make the text bold */
+    color: #666; /* Optional: change the color */
+}
+
 
 @keyframes fadeInDown {
     0% {
